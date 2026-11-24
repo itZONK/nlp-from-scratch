@@ -1,8 +1,10 @@
 from operator import truediv
 
-
-def word_count(text):
-    words = text.split()
+def word_count(data: str | list[str]):
+    if isinstance(data, str):
+        words = data.split()
+    elif isinstance(data, list):
+        words = data
     counts = {}
     for word in words:
         if word in counts:
@@ -17,7 +19,7 @@ def top_k(counts, k):
     return result[:k]
 
 def sort_student(students):
-    for student in students
+    for student in students:
         student[1]
 
 def main():
