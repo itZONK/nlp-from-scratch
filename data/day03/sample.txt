@@ -1,0 +1,4 @@
+Python is great!
+I love Python.
+Python is useful for NLP.
+Deep Learning is interesting!
