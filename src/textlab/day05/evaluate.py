@@ -1,6 +1,6 @@
 import numpy as np
-from src.textlab.day05.loss import mse
-
+# from src.textlab.day05.loss import mse
+from loss import mse
 
 def evaluate_model(
     X: np.ndarray,
@@ -8,6 +8,8 @@ def evaluate_model(
     weights: np.ndarray,
     bias: float
 ) -> float:
+    y_pred = X @ weights + bias
+    return mse(y_true, y_pred)
 
 
 
